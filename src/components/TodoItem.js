@@ -14,8 +14,9 @@ function TodoItem({item, onCheck}) {
     <label className="panel-block">
       <input type="checkbox" checked={item.done} onChange={handleChange} />
       <span className={item.done ? 'has-text-grey-light' : ''}>
+      </span>
     </label>
-    </span>
+    
   );
 }
 

@@ -39,11 +39,20 @@ function Todo() {
 
   return (
     <div className="panel">
-       <TodoItem
+      <div className="panel-heading">
+        ITSS ToDoアプリ
+      </div>
+      {items.map(item => (
+        <TodoItem 
           key={item.key}
           item={item}
           onCheck={handleCheckbox}
         />
+      ))}
+        
+      <div className="panel-block">
+        {items.length} items
+      </div>
     </div>
   );
 }
